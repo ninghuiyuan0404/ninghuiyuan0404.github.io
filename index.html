@@ -48,9 +48,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS-каналы"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Поиск"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -83,12 +83,33 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>今天自己回去加上一篇文章，自己之前的笔记</p>
+        <p>今天自己回去加上一篇文章，自己之前的笔记<br>形参:就是用来接收实参的变量，用来代表和储存实参<br>实参:传入到函数内具体的值<br>函数用来接收实参的办法：<br>1.形参<br>2.arguments</p>
+<p>###复习数组中的方法</p>
+<ul>
+<li>1.push()末尾增加内容</li>
+<li>2.unshift()开始位置增加内容</li>
+<li>3.pop()删除数组的最后一项</li>
+<li>4.shift()删除第一项</li>
+<li>5.slice(n,m-1)从索引0开始查找到最后</li>
+<li>6.splice(n,m.X1…)截取替代内容</li>
+<li>7.ary1.concat(ary2)两个数组拼接</li>
+<li>8.indexOf()，lastIndexOf()(判断有没有这一项)当前项在数组中第一次和最后一次出现的索引</li>
+<li>9.forEach(function(item,index,input){})没有返回值</li>
+<li>10.map(function(item,index,input){return 1})有返回值</li>
+<li>11.join(“指定字符”)将数组转为字符串</li>
+<li>12.reverse()倒序，原数组改变</li>
+<li>13.sort() 从小到大，原数组改变，只能处理10以内的数字</li>
+<li>14.sort(function(a,b){return a-b})可以处理10以外(a,b)(代表前一项和后一项)<br>###节点<br>childNodes：              子节点<br>children：                元素子节点<br>parentNode：              父节点<br>previousElementSibling：  上节点<br>nextSibling：             下一个节点<br>nextElementSibling：      下一个元素节点<br>firstChild：              第一个节点<br>firstElementChild：       第一个元素节点<br>lastChild：               最后一个节点<br>lastElementChild：        最后一个元素节点</li>
+</ul>
+<p>###DOM的增删改查<br>document.creatElement() ：           创建元素节点<br>父级对象.appendChild(新建的元素节点)：添加元素节点<br>parent.insertBefore(new,old)：       添加新创建的元素节点<br>parent.removeChild(要删除的节点)：    删除<br>要克隆的节点对象.cloneNode(true)：    克隆节点</p>
+<p>false()：默认只克隆当前元素，不会复制内容<br>true()：将元素及内容都克隆一份<br>parent.replaceChild(替换，被替换)：替换</p>
+<p>setAttribute：   创建属性节点<br>getAttribute：   获取属性节点<br>removeAttribute：删除属性节点</p>
+<p>节点类型           nodeType      nodeName        nodeValue<br>元素节点(元素标签)     1        大写的标签名          null<br>文本节点(文字)        3          #text         文字内容<br>注释节点(注释)         8            #comment     注释内容<br>document(整个文档)     9             #document      null</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/04/25/第三周第一天作业/" data-id="cj1xe7qic000238v3ryv352l6" class="article-share-link">Поделиться</a>
+      <a data-url="http://yoursite.com/2017/04/25/第三周第一天作业/" data-id="cj1xe7qic000238v3ryv352l6" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -124,7 +145,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/04/25/第一天/" data-id="cj1xe7qia000138v3hfl3ehqv" class="article-share-link">Поделиться</a>
+      <a data-url="http://yoursite.com/2017/04/25/第一天/" data-id="cj1xe7qia000138v3hfl3ehqv" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -169,7 +190,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/04/25/hello-world/" data-id="cj1xe7qi2000038v3othjj2sm" class="article-share-link">Поделиться</a>
+      <a data-url="http://yoursite.com/2017/04/25/hello-world/" data-id="cj1xe7qi2000038v3othjj2sm" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -194,7 +215,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Архив</h3>
+    <h3 class="widget-title">Archives</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a></li></ul>
     </div>
@@ -204,7 +225,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Недавние записи</h3>
+    <h3 class="widget-title">Articles récents</h3>
     <div class="widget">
       <ul>
         
@@ -233,7 +254,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2017 John Doe<br>
-      Создано с помощью <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
